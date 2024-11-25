@@ -27,5 +27,9 @@ function ordenar(ingredientes) {
 
 }
 
-console.log(capitalizar(ingredientes));
-console.log(ordenar(ingredientes));
+var resultadoCapitalizado = capitalizar(ingredientes);
+
+var resultadoOrdenacao = ordenar(resultadoCapitalizado)
+
+console.log(resultadoCapitalizado);
+console.log(resultadoOrdenacao);
