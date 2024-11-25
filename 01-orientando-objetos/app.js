@@ -17,10 +17,15 @@ function capitalizar(ingredientes) {
 
 }
 
+function ordenar(ingredientes) {
+
+    var ordenado = ingredientes.sort(function(a, b) {
+        return a.localeCompare(b,);
+    });
+    
+    return ordenado;
+
+}
+
 console.log(capitalizar(ingredientes));
-
-// var ordenado = modificado.sort(function(a, b) {
-//     return a.localeCompare(b,);
-// });
-
-// console.log(ordenado);
+console.log(ordenar(ingredientes));
