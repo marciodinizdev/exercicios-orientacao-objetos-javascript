@@ -1,4 +1,5 @@
-console.log("Funcionou!");
+import capitalizar from "./modificador";
+import ordenar from "./modificador";
 
 var ingredientes = ['mel', 'água', 'sal', 'mostarda'];
 

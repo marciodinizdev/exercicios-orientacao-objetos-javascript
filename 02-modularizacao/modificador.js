@@ -1,4 +1,4 @@
-function capitalizar(vetor) {
+function fnCapitalizar(vetor) {
 
     var modificado = [];
     for (var i = 0; i < vetor.length; i++) {
@@ -12,7 +12,7 @@ function capitalizar(vetor) {
 
 }
 
-function ordenar(vetor) {
+function fnOrdenar(vetor) {
 
     var ordenado = vetor.sort(function(a, b) {
         return a.localeCompare(b,);
@@ -20,4 +20,9 @@ function ordenar(vetor) {
     
     return ordenado;
 
+}
+
+export default {
+    capitalizar: fnCapitalizar,
+    ordenar: fnOrdenar
 }
