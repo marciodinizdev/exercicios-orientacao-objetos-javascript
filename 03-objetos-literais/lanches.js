@@ -15,4 +15,7 @@ var lanches = [
         valor: 6.5,
         ingredientesLanche: ['pão caixa', 'mussarela', 'presunto']
     }
+
 ]
+
+export default lanches;

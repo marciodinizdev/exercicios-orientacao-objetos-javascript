@@ -1,10 +1,12 @@
 import modificador from "./modificador.js";
 import ingredientes from "./ingredientes.js";
+import lanches from "./lanches.js";
 
-
+console.log(lanches);
 console.log(ingredientes);
 console.log(typeof ingredientes);
 console.log(Array.isArray(ingredientes));
+
 
 
 // var ingredientes = ['mel', 'água', 'sal', 'mostarda'];
