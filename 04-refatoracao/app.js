@@ -1,6 +1,7 @@
 import modificador from "./modificador.js";
-import ingredientes from "./ingredientes.js";
 import lanches from "./lanches.js";
+
+var ingredientes = ['mel', 'água', 'sal', 'mostarda'];
 
 modificador.CapitalizarNovo(ingredientes, 'nome');
 
