@@ -9,7 +9,7 @@ var ingredientes = [
         valor: 3.5
     },
     {
-        nome: 'Batata',
+        nome: 'Batata palha',
         valor: 2
     }
 
