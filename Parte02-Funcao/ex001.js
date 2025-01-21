@@ -1,5 +1,4 @@
-// 1. Crie uma função que receba dois valores e calcule: soma, subtração, multiplicação e divisão dos valores recebidos.
-
+// Função que recebe dois valores e retorna a soma, subtração, multiplicação e divisão entre eles.
 function calcular(valor1, valor2) {
     console.log('Soma:', valor1 + valor2)
     console.log('Subtração:', valor1 - valor2)
