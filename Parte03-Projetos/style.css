@@ -1,72 +1,88 @@
 body {
-    background-color: #212121;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #212121;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .resposta {
-    animation: piscar 2s infinite;
+  animation: piscar 2s infinite;
 }
 
 @keyframes piscar {
-    0% {
-        color: white;
-    }
-    50% {
-        color: rgb(86, 138, 88);
-    }
-    
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: rgb(86, 138, 88);
+  }
+
+}
+
+.explosao-texto {
+  font-size: 1rem;
+  font-weight: bold;
+  animation: explosao 1.5s ease-out;
+}
+
+/* Animação de explosão */
+@keyframes explosao {
+  0% {
+    text-shadow: 1px 1px 5px rgb(255, 255, 255);
+
+  }
+
+  20% {
+    text-shadow: 5px 5px 20px rgb(255, 255, 255);
+  }
 }
 
 .input {
-    width: 20rem;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #2c2c2c;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    outline: none;
+  width: 20rem;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  outline: none;
 }
 
 .action-btn {
-    padding: 15px 30px;
-    border: 2px solid #2c2c2c;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 30px;
-    transition: all 0.4s ease;
-    outline: none;
-    position: relative;
-    overflow: hidden;
-    font-weight: bold;
-  }
-  
-  .action-btn::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(
-      circle,
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.action-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle,
       rgba(255, 255, 255, 0.25) 0%,
-      rgba(255, 255, 255, 0) 70%
-    );
-    transform: scale(0);
-    transition: transform 0.5s ease;
-  }
-  
-  .action-btn:hover::after {
-    transform: scale(4);
-  }
-  
-  .action-btn:hover {
-    border-color: #666666;
-    background: #292929;
-  }
-  
+      rgba(255, 255, 255, 0) 70%);
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.action-btn:hover::after {
+  transform: scale(4);
+}
+
+.action-btn:hover {
+  border-color: #666666;
+  background: #292929;
+}
