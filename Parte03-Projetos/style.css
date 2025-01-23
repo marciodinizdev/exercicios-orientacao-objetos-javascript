@@ -73,16 +73,18 @@ body {
   height: 100%;
   background: radial-gradient(circle,
       rgba(255, 255, 255, 0.25) 0%,
-      rgba(255, 255, 255, 0) 70%);
-  transform: scale(0);
-  transition: transform 0.5s ease;
-}
-
-.action-btn:hover::after {
-  transform: scale(4);
-}
-
-.action-btn:hover {
-  border-color: #666666;
-  background: #292929;
-}
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .action-btn:hover::after {
+    transform: scale(4);
+  }
+  
+  .action-btn:hover {
+    border-color: #666666;
+    background: #292929;
+  }
+  
