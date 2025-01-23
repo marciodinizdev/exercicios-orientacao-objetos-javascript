@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Projeto 01: Lista de Convidados</h1>
+    <p>Adicione o nome de um convidado e clique em "Adicionar" para adicioná-lo à lista.</p>
+
+    <input type="text" class="input" placeholder="Nome do convidado ou S para sair" required>
+    <br>
+    <button onclick="convidar()" class="action-btn">Adicionar</button>
+
+    <button onclick="finalizar()" class="action-btn">Finalizar</button>
+
+    <p class="resposta"><i>Aguardando convidado...</i></p>
+
+    <div class="lista-final">
+  
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
