@@ -59,11 +59,11 @@ function finalizar() {
     } else {
         quantidade.innerHTML = 'Quantidade de convidados: ' + convidados.length + '<br><br> Convidados: <br>' + convidados.join(', ');
 
-        const ul = document.createElement('ol');
+        const ul = document.createElement('ul');
         listaFinal.appendChild(ul)
         convidados.forEach((convidado) => {
             const li = document.createElement('li');
-            li.textContent = `Boas vindas, ${convidado}, Estamos ansiosos para a festa!`
+            li.innerHTML = `<span style="font-style: italic;;">Boas vindas, ${convidado}, Estamos ansiosos para a festa!</span>`
             ul.appendChild(li)
         })
 
