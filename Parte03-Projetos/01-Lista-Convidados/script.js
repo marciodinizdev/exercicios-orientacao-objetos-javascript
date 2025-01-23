@@ -33,9 +33,18 @@ function convidar() {
         resposta.innerHTML ='<span style="color: red; font-weight: bold" >Nome inválido!</span>' + ' Por favor, insira um nome válido!';
         return;
     } else {
+        
         convidados.push(nome);
         input.value = '';
-        resposta.innerHTML = `Você adicionou <span style="color: #5DFE4D; font-weight: bold;">${nome}</span> à lista de convidados`;
+
+        quantidade.innerHTML = 'Quantidade de convidados: ' + convidados.length;
+        
+        resposta.innerHTML = `Você adicionou <span style="color: #5DFE4D; font-weight: bold;">${nome}</span> à lista de convidados!`;
+
+        resposta.style.animation = "none";
+        setTimeout(() => {
+            resposta.style.animation = "explosao 1.8s ease-out forwards";
+        }, 10);
     }
 
 }
@@ -48,7 +57,7 @@ function finalizar() {
     if (convidados.length === 0) {
         quantidade.innerHTML = 'Quantidade de convidados: ' + convidados.length + '<br><br> Ninguém foi convidado para a festa...';
     } else {
-        quantidade.innerHTML = 'Quantidade de convidados: ' + convidados.length + '<br><br> Convidados: <br>' + convidados;
+        quantidade.innerHTML = 'Quantidade de convidados: ' + convidados.length + '<br><br> Convidados: <br>' + convidados.join(', ');
 
         const ul = document.createElement('ol');
         listaFinal.appendChild(ul)
