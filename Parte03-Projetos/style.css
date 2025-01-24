@@ -111,11 +111,20 @@ body {
 table {
   padding: 1rem;
   border-collapse: collapse;
+  width: 350px;
+
 }
 th, td {
   border: 1px solid #5a5a5a;
   text-align: center;
   padding: 8px;
+  
+}
+#nome {
+  width: 100rem;
+}
+th {
+  width: 350px;
 }
 thead {
   background-color: #41424b;
