@@ -87,3 +87,22 @@ body {
     border-color: #666666;
     background: #292929;
   }
+
+#calculadora input {
+  width: 200px;
+}
+
+#calculadora .action-btn {
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  color: #019e9e;
+  border-radius: 1rem;
+  border: none;
+}
+#calculadora .action-btn:hover {
+  
+  background-color: #019e9e;
+  color: #fff;
+}

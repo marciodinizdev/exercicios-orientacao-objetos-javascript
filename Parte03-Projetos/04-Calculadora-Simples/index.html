@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Projetos</title>
+</head>
+<body>
+    <h1>Projeto 04: Calculadora Simples</h1>
+    <p>Digite os números que deseja calcular e escolha a operação</p>
+    <div id="calculadora">
+        <input id="input1" type="number" class="input" placeholder="Pimeiro número">
+        <br>
+        <input id="input2" type="number" class="input" placeholder="Segundo número">
+        <br>
+
+        <h4>Escolha a operação</h4>
+        <button onclick="calcular('+')" class="action-btn somar" >+</button>
+        <button onclick="calcular('-')" class="action-btn subtrair" >-</button>
+        <button onclick="calcular('*')" class="action-btn multiplicar" >x</button>
+        <button onclick="calcular('/')" class="action-btn dividir" >/</button>
+        <br><br>
+    </div>
+    <div class="resultado"></div>
+    <script src="script.js"></script>
+</body>
+</html>
