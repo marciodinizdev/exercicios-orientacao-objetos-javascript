@@ -174,3 +174,65 @@ tr:hover {
 .table-btn:hover {
   background-color: #019e55;
 }
+
+/* Conversor de Temperatura */
+#conversor-temperatura {
+  background-color: white;
+  color: #59607e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+
+}
+.temps {
+  display: flex;
+  gap: 1rem;
+}
+.temp {
+  background-color: #019e55;
+  border: 1px solid #019e55;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 100px;
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+.temp:hover {
+  background-color: #59607e;
+}
+.input-temp {
+  width: 14rem;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid #2c2c2c;
+  color: #59607e;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.input-temp:focus {
+  outline: none;
+}
+#conversor-temperatura .resultado {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  height: 200px;
+  width: 100%;
+  background-color: #019e55;
+  font-size: 3rem;
+  font-weight: bold;
+  border-radius: 0 0 1rem 1rem;
+}

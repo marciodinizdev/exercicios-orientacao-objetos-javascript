@@ -25,7 +25,16 @@ function adicionarProduto() {
     textoCapitalizado = '';
 }
 
+// Adicionar produto com "Enter"
+document.querySelector('.table-input').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        adicionarProduto();
+    }
+});
+
+
 function removerProduto(botao) {
     const linha = botao.closest('tr');
     linha.remove();
 }
+
